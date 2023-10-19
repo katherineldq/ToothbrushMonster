@@ -2,7 +2,7 @@ body{
 	margin: 10vw;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #CFE2F3;
+	background-color: #01101e;
 }
 
 .Brush{
@@ -15,24 +15,32 @@ body{
 	display: flex;
     flex-direction: column;
 }
+
+.bigboxa {	
+	display: grid;
+	grid-template-rows: 33% 30% 37%; 
+	grid-template-columns: 1fr 3fr; 
+  }
+  
 .bristle {
     width: 100px;
     height: 25px;
     margin: 0;
+	transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.bristle:hover {
+    transform: scaleX(2);
 }
 
 .blue {
-    background-color: rgb(67, 118, 220);
+    background-color: rgb(99, 146, 240);
 }
 
 .green {
-    background-color: rgb(135, 225, 135);
+    background-color: rgb(180, 239, 180);
 }
-.bigboxa {	
-  display: grid;
-  grid-template-rows: 33% 30% 37%; 
-  grid-template-columns: 1fr 4fr; 
-}
+
 
 .boxa{
 	background: #932b2b;
