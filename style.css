@@ -6,6 +6,17 @@ body {
 	
 }
 
+.bigbox1{
+	display: flex;
+	width: 100%;
+}
+
+.bigbox2{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
 .Brush {
 	width: 150px;
 	display: grid;
