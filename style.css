@@ -6,12 +6,7 @@ body {
 	
 }
 
-.bigbox1{
-	display: flex;
-	width: 100%;
-}
-
-.bigbox2{
+.allbox{
 	display: flex;
 	position: relative;
 	width: 100%;
@@ -25,7 +20,7 @@ body {
 	margin: 0px 25px;
 }
 
-.grid {
+.bris {
 	display: flex;
 	flex-direction: column;
 }
@@ -58,23 +53,23 @@ body {
 
 
 .boxa {
-	background: #932b2b;
+	background: #f80d40;
 }
 
 .boxc {
-	background: #37379e;
+	background: #ed18b8;
 }
 
 .boxe {
-	background: #4f3d3d;
+	background: #9a00dc;
 }
 
 .boxf {
-	background: #587a83;
+	background: #14c5f6;
 }
 
 .bigboxb {
-	background: #a2e62d;
+	background: #95e40d;
 }
 
 .boxb {
@@ -83,38 +78,54 @@ body {
 	flex-direction: column;
 }
 
-.aniBrush {
+.movingbrush {
 	position: absolute;
 	animation: first  5s ease infinite;
 	right: 0;
+	transform: scaleX(-1);
 }
 
 @keyframes first {
 	0% {
         right: 0;
-		transform: scaleX(-1);
     }
-
-   
 	50% {
         right:calc(100% - 175px); 
-		transform: scaleX(-1);
     }
 	100% {
         right:0; 
-		transform: scaleX(-1);
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 
-	.body{
-		background-color:red !important;
+	body{
+		background-color:rgb(240, 12, 12);
 	}
 
+	.bris{
+		display: flex;
+	}
+
+	.bigboxb{
+		display: flex;
+	}
+	.boxc{
+		display: flex ;
+	}
+	.boxd{
+		display: flex;
+	}
+	.boxe{
+		display: flex ;
+	}
+	.boxf{
+		display: flex ;
+	}
+	
 	.Brush{
         display: none;
-
    }
+
    .BrushA{
         display: grid;
    }
