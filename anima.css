@@ -1,0 +1,196 @@
+body {
+    animation: changeBackgroundColor 30s linear infinite;
+	margin: 10vw;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #01101e;
+	
+}
+
+.allbox{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
+.Brush {
+	width: 150px;
+	display: grid;
+	grid-template-rows: 400px 400px;
+	grid-template-columns: 1fr;
+	margin: 0px 25px;
+}
+
+.bris {
+	display: flex;
+	flex-direction: column;
+}
+
+.bigboxa {
+	display: grid;
+	grid-template-rows: 33% 30% 37%;
+	grid-template-columns: 1fr 3fr;
+}
+
+.bristle {
+	width: 100px;
+	height: 25px;
+	margin: 0;
+	transition: transform 0.3s;
+	/* Add a smooth transition effect */
+}
+
+.bristle:hover {
+	transform: scaleX(4);
+}
+
+.blue {
+	background-color: rgb(99, 146, 240);
+}
+
+.green {
+	background-color: rgb(180, 239, 180);
+}
+
+
+.boxa {
+	background: #ffffff;
+}
+
+.boxc {
+	background: #ffffff;
+}
+
+.boxe {
+	background: #d5d5d5;
+}
+
+.boxf {
+	background: #d5d5d5;
+}
+
+.bigboxb {
+	background: #b1b1b1;
+}
+
+.boxb {
+	height: 10vh;
+	display: flex;
+	flex-direction: column;
+}
+
+@keyframes moveLeftToRight {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+}
+
+.BrushB {
+    position: absolute;
+    animation: moveLeftToRight 4s linear infinite alternate;
+}
+
+
+@keyframes moveLeftToRight {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+}
+
+.BrushA {
+    position: absolute;
+    animation: moveLeftToRight 2s linear infinite alternate;
+}
+
+.BrushC {
+    position: absolute;
+    animation: moveLeftToRight 8s linear infinite alternate;
+}
+
+.BrushD {
+    position: absolute;
+    animation: moveLeftToRight 1s linear infinite alternate;
+}
+
+.BrushE {
+    top: calc(50% - 50px); /* Center vertically */
+    left: calc(50% - 50px); /* Center horizontally */
+    position: absolute;
+    animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateY(-40px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(40px);
+    }
+}
+
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #FF5733; /* Color 1 */
+    }
+    10% {
+        background-color: #3498DB; /* Color 2 */
+    }
+    20% {
+        background-color: #E74C3C; /* Color 3 */
+    }
+    30% {
+        background-color: #2ECC71; /* Color 4 */
+    }
+    40% {
+        background-color: #F1C40F; /* Color 5 */
+    }
+    50% {
+        background-color: #9B59B6; /* Color 6 */
+    }
+    60% {
+        background-color: #E67E22; /* Color 7 */
+    }
+    70% {
+        background-color: #1ABC9C; /* Color 8 */
+    }
+    80% {
+        background-color: #F39C12; /* Color 9 */
+    }
+    90% {
+        background-color: #34495E; /* Color 10 */
+    }
+    100% {
+        background-color: #FF5733; /* Back to Color 1 */
+    }
+}
+
+.boxae {
+	background: #f80d40;
+}
+
+.boxce {
+	background: #ed18b8;
+}
+
+.boxee {
+	background: #9a00dc;
+}
+
+.boxfe {
+	background: #14c5f6;
+}
+
+.bigboxbe {
+	background: #95e40d;
+}

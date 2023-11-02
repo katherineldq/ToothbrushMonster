@@ -1,0 +1,278 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background:  #01101e;
+    animation: ColorChange 12s ease forwards;
+    animation: changeBackgroundColor 10s linear infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bigbox{
+    padding: 70px 40px 0px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lbox {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.lbox1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigbox, .person {
+    animation: MoveCounterClockwise 5s ease-in-out infinite;
+    animation-delay: 2s; 
+}
+
+.person{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1.5fr 7fr 1.5fr;
+}
+
+.hair{
+    background: #000000;
+    animation: ColorChange5 12s ease forwards;
+}
+
+.face{
+    padding: 10%;
+    background-color: #93E6E1;
+    animation: ColorChange3 12s ease forwards;
+}
+
+.neck{
+    padding: 0 30%;
+}
+
+.neck div{
+    height: 100%;
+    background-color: #93E6E1;
+    animation: ColorChange4 12s ease forwards;
+
+}
+.tooth {
+    background: #fff;
+    position: relative;
+    animation: ColorChange1 12s ease forwards;
+}
+
+.eye {
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.upperwhite {
+    background: #ffffff;
+}
+
+.lids {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #201e1e;
+    animation: ColorChange2 12s ease forwards;
+}
+
+.eyewhite {
+    background: #ffffff;
+}
+
+.animatebrush {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: -70%;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    animation: CircularMotion 0.5s ease-in infinite;
+}
+
+.ToothbrushFooter {
+    background: #a7a7a7;
+    animation: ColorChange6 12s ease forwards;
+}
+
+.ToothbrushHead {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+
+.blue {
+	background-color: rgb(99, 146, 240);
+}
+
+.green {
+	background-color: rgb(180, 239, 180);
+}
+
+.headbox1 {
+    grid-row: 1;
+    /* 第一行 */
+    grid-column: 2;
+    /* 右列 */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+}
+
+.headbox2{
+    grid-row: 2;
+    grid-column: span 7;
+    background-color: #eeeeee;
+}
+
+
+@keyframes ColorChange {
+    0% {
+        background:  #01101e;
+    }
+    
+    50% {
+        background: red;
+    }
+    
+    100% {
+        background: rgb(115, 0, 0);
+    }
+}
+
+@keyframes ColorChange1 {
+    0% {
+        background: #fff;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+@keyframes ColorChange2 {
+    0% {
+        background: #201e1e;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+@keyframes ColorChange3 {
+    0% {
+        background: #ffc48a;
+    }
+
+    100% {
+        background: #55dcd3;
+    }
+}
+
+@keyframes ColorChange4 {
+    0% {
+        background: #e48629;
+    }
+
+    100% {
+        background: #598ABE;
+    }
+}
+
+@keyframes ColorChange5 {
+    0% {
+        background: #000000;
+    }
+
+    100% {
+        background: #002247;
+    }
+}
+
+@keyframes ColorChange6 {
+    0% {
+        background: #a7a7a7;
+    }
+
+    100% {
+        background: #2ef338;
+    }
+}
+
+@keyframes CircularMotion {
+    0% {
+        transform: translateX(0) translateY(-90%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) translateY(-90%) rotate(360deg);
+    }
+}
+
+ @media screen and (max-width: 600px) {
+    body{
+        background-color: #201e1e;
+    }
+    .animatebrush {
+        position: relative;
+        width: 100%; /* 设置为原本大小 */
+        height: 100%; /* 设置为原本大小 */
+        left: 0;
+        display: grid;
+        grid-template-columns: 3fr 1.75fr;
+        animation: none; /* 移除动画 */
+    }
+
+ }
+
+ @keyframes MoveCounterClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #ff3333;
+    }
+    25% {
+        background-color: #dc0000;
+    }
+    50% {
+        background-color: #5733FF;
+    }
+    75% {
+        background-color: #8d0000;
+    }
+    100% {
+        background-color: #6a0030;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .animatebrush {
+        position: relative;
+        width: 140%; /* 设置为原本大小 */
+        height: 60%; /* 设置为原本大小 */
+        left: -70%;
+        display: grid;
+        grid-template-columns: 3fr 1.75fr;
+    }
+
+ }

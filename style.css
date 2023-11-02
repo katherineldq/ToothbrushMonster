@@ -40,7 +40,7 @@ body {
 }
 
 .bristle:hover {
-	transform: scaleX(2);
+	transform: scaleX(4);
 }
 
 .blue {
@@ -96,6 +96,22 @@ body {
         right:0; 
     }
 }
+
+@media screen and (max-width: 1200px) {
+
+	body{
+		background-color:rgb(240, 12, 12);
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+
+	body{
+		background-color:rgb(34, 0, 205);
+	}
+}
+
 @media screen and (max-width: 600px) {
 
 	body{
